@@ -1,0 +1,123 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5B73DA59A91C73E",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vio_0": "",
+      "mux41_0": ""
+    },
+    "ports": {
+      "out_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "mux41_0": {
+        "vlnv": "xilinx.com:module_ref:mux41:1.0",
+        "xci_name": "design_1_mux41_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux41",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "a": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "outf": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "mux41_0_out": {
+        "ports": [
+          "mux41_0/outf",
+          "out_0",
+          "vio_0/probe_in0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "vio_0/clk"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "mux41_0/sel"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "mux41_0/a"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "mux41_0/b"
+        ]
+      }
+    }
+  }
+}

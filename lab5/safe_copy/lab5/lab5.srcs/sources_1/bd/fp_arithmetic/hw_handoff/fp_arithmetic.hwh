@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May  2 08:22:03 2020" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="fp_arithmetic" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_16_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_16_biti_1" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_24_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_26_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_48_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_48_biti_1" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_57_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_8_biti_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_8_biti_1" PORT="clk"/>
+        <CONNECTION INSTANCE="Registru_8_biti_2" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="exponentii" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exponentii">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_16_biti_0" PORT="inp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="operatie" SIGIS="undef" SIGNAME="External_Ports_operatie">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Modulul_5_0" PORT="op"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="load" SIGIS="clk" SIGNAME="External_Ports_load">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_16_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_16_biti_1" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_24_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_26_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_48_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_48_biti_1" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_57_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_8_biti_0" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_8_biti_1" PORT="ld"/>
+        <CONNECTION INSTANCE="Registru_8_biti_2" PORT="ld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="reset" SIGIS="clk" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_16_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_16_biti_1" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_24_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_26_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_48_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_48_biti_1" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_57_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_8_biti_0" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_8_biti_1" PORT="clr"/>
+        <CONNECTION INSTANCE="Registru_8_biti_2" PORT="clr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="mantisa_out" RIGHT="0" SIGIS="undef" SIGNAME="Registru_24_biti_0_outp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_24_biti_0" PORT="outp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="exponent_out" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_2_outp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_8_biti_2" PORT="outp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="47" NAME="mantisele" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mantisele">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Registru_48_biti_0" PORT="inp"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_1_0" HWVERSION="1.0" INSTANCE="Modulul_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_1" VLNV="xilinx.com:module_ref:Modulul_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="exponenti" RIGHT="0" SIGIS="undef" SIGNAME="Registru_16_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_16_biti_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="valoarea1" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_1_0_valoarea1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_7_0" PORT="val1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="fw_exp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_1_0_fw_exp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_16_biti_1" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_2_0" HWVERSION="1.0" INSTANCE="Modulul_2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_2" VLNV="xilinx.com:module_ref:Modulul_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="exponenti" RIGHT="0" SIGIS="undef" SIGNAME="Registru_16_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_16_biti_1" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="exp_ales" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_2_0_exp_ales">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_8_biti_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_3_0" HWVERSION="1.0" INSTANCE="Modulul_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_3" VLNV="xilinx.com:module_ref:Modulul_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="exponent" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_8_biti_1" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="valoarea2" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_6_0_valoarea2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_6_0" PORT="valoarea2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="exponent_bun" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_3_0_exponent_bun">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_8_biti_2" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_4_0" HWVERSION="1.0" INSTANCE="Modulul_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_4" VLNV="xilinx.com:module_ref:Modulul_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="56" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_57_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_57_biti_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="mantise" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_4_0_mantise">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_48_biti_1" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_5_0" HWVERSION="1.0" INSTANCE="Modulul_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_5" VLNV="xilinx.com:module_ref:Modulul_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="mantise" RIGHT="0" SIGIS="undef" SIGNAME="Registru_48_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_48_biti_1" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="op" SIGIS="undef" SIGNAME="External_Ports_operatie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="operatie"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_5_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_26_biti_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_6_0" HWVERSION="1.0" INSTANCE="Modulul_6_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_6" VLNV="xilinx.com:module_ref:Modulul_6:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_6_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="25" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_26_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_26_biti_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="mantisa" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_6_0_mantisa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_24_biti_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="valoarea2" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_6_0_valoarea2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_3_0" PORT="valoarea2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Modulul_7_0" HWVERSION="1.0" INSTANCE="Modulul_7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Modulul_7" VLNV="xilinx.com:module_ref:Modulul_7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Modulul_7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="mantise" RIGHT="0" SIGIS="undef" SIGNAME="Registru_48_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_48_biti_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="val1" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_1_0_valoarea1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_1_0" PORT="valoarea1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="56" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_7_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_57_biti_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_16_biti_0" HWVERSION="1.0" INSTANCE="Registru_16_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_16_biti" VLNV="xilinx.com:module_ref:Registru_16_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_16_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exponentii">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="exponentii"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_16_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_1_0" PORT="exponenti"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_16_biti_1" HWVERSION="1.0" INSTANCE="Registru_16_biti_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_16_biti" VLNV="xilinx.com:module_ref:Registru_16_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_16_biti_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_1_0_fw_exp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_1_0" PORT="fw_exp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_16_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_2_0" PORT="exponenti"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_24_biti_0" HWVERSION="1.0" INSTANCE="Registru_24_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_24_biti" VLNV="xilinx.com:module_ref:Registru_24_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_24_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_6_0_mantisa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_6_0" PORT="mantisa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_24_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mantisa_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_26_biti_0" HWVERSION="1.0" INSTANCE="Registru_26_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_26_biti" VLNV="xilinx.com:module_ref:Registru_26_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_26_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="25" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_5_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_5_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_26_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_6_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_48_biti_0" HWVERSION="1.0" INSTANCE="Registru_48_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_48_biti" VLNV="xilinx.com:module_ref:Registru_48_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_48_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mantisele">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mantisele"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_48_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_7_0" PORT="mantise"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_48_biti_1" HWVERSION="1.0" INSTANCE="Registru_48_biti_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_48_biti" VLNV="xilinx.com:module_ref:Registru_48_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_48_biti_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_4_0_mantise">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_4_0" PORT="mantise"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_48_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_5_0" PORT="mantise"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_57_biti_0" HWVERSION="1.0" INSTANCE="Registru_57_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_57_biti" VLNV="xilinx.com:module_ref:Registru_57_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_57_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="56" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_7_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_7_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="56" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_57_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_4_0" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_8_biti_0" HWVERSION="1.0" INSTANCE="Registru_8_biti_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_8_biti" VLNV="xilinx.com:module_ref:Registru_8_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_8_biti_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_2_0_exp_ales">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_2_0" PORT="exp_ales"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_8_biti_1" PORT="inp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_8_biti_1" HWVERSION="1.0" INSTANCE="Registru_8_biti_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_8_biti" VLNV="xilinx.com:module_ref:Registru_8_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_8_biti_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_0_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registru_8_biti_0" PORT="outp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_1_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_3_0" PORT="exponent"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Registru_8_biti_2" HWVERSION="1.0" INSTANCE="Registru_8_biti_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registru_8_biti" VLNV="xilinx.com:module_ref:Registru_8_biti:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fp_arithmetic_Registru_8_biti_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="External_Ports_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="inp" RIGHT="0" SIGIS="undef" SIGNAME="Modulul_3_0_exponent_bun">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Modulul_3_0" PORT="exponent_bun"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="outp" RIGHT="0" SIGIS="undef" SIGNAME="Registru_8_biti_2_outp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="exponent_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

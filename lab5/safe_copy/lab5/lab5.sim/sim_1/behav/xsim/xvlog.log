@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Modulul_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulul_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_16_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_16_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_48_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_48_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_57_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_57_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_8_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_8_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_26_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_26_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/new/Registru_24_biti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registru_24_biti
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_1_0_0/sim/fp_arithmetic_Modulul_1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_7_0_0/sim/fp_arithmetic_Modulul_7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_2_0_0/sim/fp_arithmetic_Modulul_2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_4_0_0/sim/fp_arithmetic_Modulul_4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_5_0_0/sim/fp_arithmetic_Modulul_5_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_5_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_3_0_0/sim/fp_arithmetic_Modulul_3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Modulul_6_0_0/sim/fp_arithmetic_Modulul_6_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Modulul_6_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_16_biti_0_0/sim/fp_arithmetic_Registru_16_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_16_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_48_biti_0_0/sim/fp_arithmetic_Registru_48_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_48_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_57_biti_0_0/sim/fp_arithmetic_Registru_57_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_57_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_16_biti_1_0/sim/fp_arithmetic_Registru_16_biti_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_16_biti_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_48_biti_1_0/sim/fp_arithmetic_Registru_48_biti_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_48_biti_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_8_biti_0_0/sim/fp_arithmetic_Registru_8_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_8_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_26_biti_0_0/sim/fp_arithmetic_Registru_26_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_26_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_8_biti_1_0/sim/fp_arithmetic_Registru_8_biti_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_8_biti_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_24_biti_0_0/sim/fp_arithmetic_Registru_24_biti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_24_biti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/ip/fp_arithmetic_Registru_8_biti_2_0/sim/fp_arithmetic_Registru_8_biti_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_Registru_8_biti_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.ip_user_files/bd/fp_arithmetic/sim/fp_arithmetic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sources_1/bd/fp_arithmetic/hdl/fp_arithmetic_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_arithmetic_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/fac/cn/lab5/lab5.srcs/sim_1/new/simulare_pt_detoate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare_pt_detoate

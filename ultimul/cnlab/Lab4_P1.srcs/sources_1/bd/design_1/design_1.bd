@@ -1,0 +1,138 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9CF6C62C5CE3FB25",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "ila_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "c": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "res": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_util_vector_logic_0_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_util_vector_logic_1_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "xor"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Op1_0_1": {
+        "ports": [
+          "a",
+          "util_vector_logic_1/Op1"
+        ]
+      },
+      "Op2_0_1": {
+        "ports": [
+          "b",
+          "util_vector_logic_1/Op2"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "Op2_0_2": {
+        "ports": [
+          "c",
+          "util_vector_logic_0/Op2"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "ila_0/clk"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "res",
+          "ila_0/probe0"
+        ]
+      }
+    }
+  }
+}

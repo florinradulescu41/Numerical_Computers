@@ -1,0 +1,45 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 854de86130eb4aa4ae4fb64457c0d7eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_pt_detoate_behav xil_defaultlib.simulare_pt_detoate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Modulul_1
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_1_0_0
+Compiling module xil_defaultlib.Modulul_2
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_2_0_0
+Compiling module xil_defaultlib.Modulul_3
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_3_0_0
+Compiling module xil_defaultlib.Modulul_4
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_4_0_0
+Compiling module xil_defaultlib.Modulul_5
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_5_0_0
+Compiling module xil_defaultlib.Modulul_6
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_6_0_0
+Compiling module xil_defaultlib.Modulul_7
+Compiling module xil_defaultlib.fp_arithmetic_Modulul_7_0_0
+Compiling module xil_defaultlib.Registru_16_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_16_biti_0...
+Compiling module xil_defaultlib.fp_arithmetic_Registru_16_biti_1...
+Compiling module xil_defaultlib.Registru_24_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_24_biti_0...
+Compiling module xil_defaultlib.Registru_26_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_26_biti_0...
+Compiling module xil_defaultlib.Registru_48_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_48_biti_0...
+Compiling module xil_defaultlib.fp_arithmetic_Registru_48_biti_1...
+Compiling module xil_defaultlib.Registru_57_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_57_biti_0...
+Compiling module xil_defaultlib.Registru_8_biti
+Compiling module xil_defaultlib.fp_arithmetic_Registru_8_biti_0_...
+Compiling module xil_defaultlib.fp_arithmetic_Registru_8_biti_1_...
+Compiling module xil_defaultlib.fp_arithmetic_Registru_8_biti_2_...
+Compiling module xil_defaultlib.fp_arithmetic
+Compiling module xil_defaultlib.fp_arithmetic_wrapper
+Compiling module xil_defaultlib.simulare_pt_detoate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_pt_detoate_behav

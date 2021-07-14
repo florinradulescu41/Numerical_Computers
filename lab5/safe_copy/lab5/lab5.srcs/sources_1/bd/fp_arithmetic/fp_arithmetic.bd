@@ -1,0 +1,1123 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBE870EDBF1A25E1F",
+      "device": "xc7a100tcsg324-1",
+      "name": "fp_arithmetic",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Modulul_2_0": "",
+      "Modulul_6_0": "",
+      "Registru_16_biti_0": "",
+      "Registru_16_biti_1": "",
+      "Registru_24_biti_0": "",
+      "Registru_26_biti_0": "",
+      "Registru_48_biti_0": "",
+      "Registru_48_biti_1": "",
+      "Registru_57_biti_0": "",
+      "Registru_8_biti_0": "",
+      "Registru_8_biti_1": "",
+      "Registru_8_biti_2": "",
+      "Modulul_7_0": "",
+      "Modulul_1_0": "",
+      "Modulul_3_0": "",
+      "Modulul_4_0": "",
+      "Modulul_5_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fp_arithmetic_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "exponentii": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "operatie": {
+        "direction": "I"
+      },
+      "load": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fp_arithmetic_clk1",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fp_arithmetic_clk1",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "mantisa_out": {
+        "direction": "O",
+        "left": "23",
+        "right": "0"
+      },
+      "exponent_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "mantisele": {
+        "direction": "I",
+        "left": "47",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Modulul_2_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_2:1.0",
+        "xci_name": "fp_arithmetic_Modulul_2_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "exponenti": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "exp_ales": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_6_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_6:1.0",
+        "xci_name": "fp_arithmetic_Modulul_6_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_6",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "inp": {
+            "direction": "I",
+            "left": "25",
+            "right": "0"
+          },
+          "mantisa": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "valoarea2": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_16_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_16_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_16_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_16_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_16_biti_1": {
+        "vlnv": "xilinx.com:module_ref:Registru_16_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_16_biti_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_16_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_24_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_24_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_24_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_24_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_26_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_26_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_26_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_26_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "25",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "25",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_48_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_48_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_48_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_48_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_48_biti_1": {
+        "vlnv": "xilinx.com:module_ref:Registru_48_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_48_biti_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_48_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_57_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_57_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_57_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_57_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "56",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "56",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_8_biti_0": {
+        "vlnv": "xilinx.com:module_ref:Registru_8_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_8_biti_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_8_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_8_biti_1": {
+        "vlnv": "xilinx.com:module_ref:Registru_8_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_8_biti_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_8_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Registru_8_biti_2": {
+        "vlnv": "xilinx.com:module_ref:Registru_8_biti:1.0",
+        "xci_name": "fp_arithmetic_Registru_8_biti_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Registru_8_biti",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ld": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fp_arithmetic_clk1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "inp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_7_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_7:1.0",
+        "xci_name": "fp_arithmetic_Modulul_7_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_7",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mantise": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "val1": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "56",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_1_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_1:1.0",
+        "xci_name": "fp_arithmetic_Modulul_1_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "exponenti": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "valoarea1": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "fw_exp": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_3_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_3:1.0",
+        "xci_name": "fp_arithmetic_Modulul_3_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "exponent": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "valoarea2": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "exponent_bun": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_4_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_4:1.0",
+        "xci_name": "fp_arithmetic_Modulul_4_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "inp": {
+            "direction": "I",
+            "left": "56",
+            "right": "0"
+          },
+          "mantise": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          }
+        }
+      },
+      "Modulul_5_0": {
+        "vlnv": "xilinx.com:module_ref:Modulul_5:1.0",
+        "xci_name": "fp_arithmetic_Modulul_5_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulul_5",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mantise": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "op": {
+            "direction": "I"
+          },
+          "outp": {
+            "direction": "O",
+            "left": "25",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "Registru_16_biti_0/clk",
+          "Registru_16_biti_1/clk",
+          "Registru_24_biti_0/clk",
+          "Registru_26_biti_0/clk",
+          "Registru_48_biti_0/clk",
+          "Registru_48_biti_1/clk",
+          "Registru_57_biti_0/clk",
+          "Registru_8_biti_0/clk",
+          "Registru_8_biti_1/clk",
+          "Registru_8_biti_2/clk"
+        ]
+      },
+      "Modulul_1_0_valoarea1": {
+        "ports": [
+          "Modulul_1_0/valoarea1",
+          "Modulul_7_0/val1"
+        ]
+      },
+      "Registru_16_biti_0_out": {
+        "ports": [
+          "Registru_16_biti_0/outp",
+          "Modulul_1_0/exponenti"
+        ]
+      },
+      "exponentii_1": {
+        "ports": [
+          "exponentii",
+          "Registru_16_biti_0/inp"
+        ]
+      },
+      "Registru_48_biti_0_out": {
+        "ports": [
+          "Registru_48_biti_0/outp",
+          "Modulul_7_0/mantise"
+        ]
+      },
+      "Modulul_7_0_out": {
+        "ports": [
+          "Modulul_7_0/outp",
+          "Registru_57_biti_0/inp"
+        ]
+      },
+      "Registru_57_biti_0_out": {
+        "ports": [
+          "Registru_57_biti_0/outp",
+          "Modulul_4_0/inp"
+        ]
+      },
+      "Registru_16_biti_1_out": {
+        "ports": [
+          "Registru_16_biti_1/outp",
+          "Modulul_2_0/exponenti"
+        ]
+      },
+      "Modulul_1_0_fw_exp": {
+        "ports": [
+          "Modulul_1_0/fw_exp",
+          "Registru_16_biti_1/inp"
+        ]
+      },
+      "Modulul_4_0_mantise": {
+        "ports": [
+          "Modulul_4_0/mantise",
+          "Registru_48_biti_1/inp"
+        ]
+      },
+      "Registru_48_biti_1_out": {
+        "ports": [
+          "Registru_48_biti_1/outp",
+          "Modulul_5_0/mantise"
+        ]
+      },
+      "op_0_1": {
+        "ports": [
+          "operatie",
+          "Modulul_5_0/op"
+        ]
+      },
+      "Modulul_2_0_exp_ales": {
+        "ports": [
+          "Modulul_2_0/exp_ales",
+          "Registru_8_biti_0/inp"
+        ]
+      },
+      "Modulul_6_0_valoarea2": {
+        "ports": [
+          "Modulul_6_0/valoarea2",
+          "Modulul_3_0/valoarea2"
+        ]
+      },
+      "Registru_8_biti_1_out": {
+        "ports": [
+          "Registru_8_biti_1/outp",
+          "Modulul_3_0/exponent"
+        ]
+      },
+      "Modulul_6_0_mantisa": {
+        "ports": [
+          "Modulul_6_0/mantisa",
+          "Registru_24_biti_0/inp"
+        ]
+      },
+      "Modulul_3_0_exponent_bun": {
+        "ports": [
+          "Modulul_3_0/exponent_bun",
+          "Registru_8_biti_2/inp"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "Registru_16_biti_0/clr",
+          "Registru_16_biti_1/clr",
+          "Registru_24_biti_0/clr",
+          "Registru_26_biti_0/clr",
+          "Registru_48_biti_0/clr",
+          "Registru_48_biti_1/clr",
+          "Registru_57_biti_0/clr",
+          "Registru_8_biti_0/clr",
+          "Registru_8_biti_1/clr",
+          "Registru_8_biti_2/clr"
+        ]
+      },
+      "load_1": {
+        "ports": [
+          "load",
+          "Registru_16_biti_0/ld",
+          "Registru_16_biti_1/ld",
+          "Registru_24_biti_0/ld",
+          "Registru_26_biti_0/ld",
+          "Registru_48_biti_0/ld",
+          "Registru_48_biti_1/ld",
+          "Registru_57_biti_0/ld",
+          "Registru_8_biti_0/ld",
+          "Registru_8_biti_1/ld",
+          "Registru_8_biti_2/ld"
+        ]
+      },
+      "Registru_24_biti_0_out": {
+        "ports": [
+          "Registru_24_biti_0/outp",
+          "mantisa_out"
+        ]
+      },
+      "Registru_8_biti_2_out": {
+        "ports": [
+          "Registru_8_biti_2/outp",
+          "exponent_out"
+        ]
+      },
+      "in_0_1": {
+        "ports": [
+          "mantisele",
+          "Registru_48_biti_0/inp"
+        ]
+      },
+      "Registru_8_biti_0_outp": {
+        "ports": [
+          "Registru_8_biti_0/outp",
+          "Registru_8_biti_1/inp"
+        ]
+      },
+      "Modulul_5_0_outp": {
+        "ports": [
+          "Modulul_5_0/outp",
+          "Registru_26_biti_0/inp"
+        ]
+      },
+      "Registru_26_biti_0_outp": {
+        "ports": [
+          "Registru_26_biti_0/outp",
+          "Modulul_6_0/inp"
+        ]
+      }
+    }
+  }
+}

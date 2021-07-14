@@ -1,0 +1,59 @@
+Test curs virtual 4
+Radulescu Florin 323 CC
+
+1. Care sunt instructiunile unui processor MIPS care opereaza intr-un singur
+ciclu de ceas?
+Detaliati zonele de biti pentru fiecare instructiune in parte.
+
+Raspuns:
+
+Instrucțiunile MIPS au 32 de biți si sunt prezente trei formate diferite:
+Tipul R = formatul instrucțiunii aritmetice
+Tipul I = formatul instrucțiunii de transfer, ramificație, imediat
+Tipul J = formatul instrucțiunii de salt
+
+Exemple de aceste instrucțiuni: de referire a memoriei (încărcare/memorare), 
+aritmetice și logice (add, sub, and, or, slt (set-on-less-than)), sau de
+ramificație la egal și de salt.
+
+Detalierea zonelor de biti:
+Tipul R: bitii 31-26 - op: codul de operație al instrucțiunii
+	bitii 25-21 - rs: adresa registru sursă
+	bitii 20-16 - rt: adresa alt registru sursă
+	bitii 15-11 - rd: adresa registru destinație
+	bitii 10-6 - shamt: numărul de biți cu care se efectuează deplasarea
+	bitii 5-0 - funct: selectia variantei de operație specificată de op
+
+Tipul I: bitii 31-26 - op: codul de operație al instrucțiunii
+	bitii 25-21 - rs: adresa registru sursă
+	bitii 20-16 - rt: adresa alt registru sursă
+	bitii 15-0 - adresa: deplasarea adresei(offset)/valoarea imediata
+
+Tipul J: bitii 31-26 - op: codul de operație al instrucțiunii
+	bitii 25-0 - adresa tinta: deplasarea pentru adresa țintă de salt
+
+2. Descrieti calea de date pentru efectuarea instructiunii de ramificatie la
+egal.
+
+Raspuns:
+
+Instrucțiunea este formată din 2 registre care sunt comparate pentru egalitate
+și o deplasare de 16 biți, folosită în calculul adresei obiectiv pentru
+ramificaţie: beq $t1, $t2, offset
+
+În vederea implementării acestei instrucțiuni trebuie determinată adresa
+obiectiv pentru ramificație, anume incrementam PC cu câmpul de deplasare al
+instrucțiunii cu semnul extins. Offset este folosit în calculul adresei
+obiectiv pentru ramificație, care este relativă la adresa instrucțiunii de
+ramificație. Câmpul deplasării trebuie mutat cu 2 poziții la stânga.
+
+Arhitectura setului de instrucțiuni specifică faptul că baza pentru calculul
+adresei de ramificație este adresa instrucțiunii care urmează ramificației.
+Deoarece automat se calculează PC+4 (adresa următoarei instrucțiuni), această
+valoare se utilizează ca bază pentru calculul adresei obiectiv pentru
+ramificație.
+
+Arhitectura mai stabilește că trebuie deplasat spre stânga cu 2
+biți câmpul deplasării din instrucțiune, deoarece deplasarea este la nivel de
+cuvânt. Această deplasare spre stânga  crește domeniul efectiv al câmpului
+deplasării cu un factor de 4.

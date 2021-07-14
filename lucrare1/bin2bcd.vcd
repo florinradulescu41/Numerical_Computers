@@ -1,0 +1,26 @@
+$date
+	Fri Mar 20 17:15:19 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module bin2bcd $end
+$var wire 6 ! valoare_bin [5:0] $end
+$var wire 4 " BCD1 [3:0] $end
+$var wire 4 # BCD0 [3:0] $end
+$var reg 8 $ bcd [7:0] $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 %
+b0zzzzzz $
+b0zz #
+bz "
+bz !
+$end
+#20

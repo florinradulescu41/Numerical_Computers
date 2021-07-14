@@ -1,0 +1,125 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6A4A8B19D01D55E9",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "vio_0": "",
+      "Adder_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_util_vector_logic_0_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "xor"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_util_vector_logic_1_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "1"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          }
+        }
+      },
+      "Adder_0": {
+        "vlnv": "xilinx.com:module_ref:Adder:1.0",
+        "xci_name": "design_1_Adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "util_vector_logic_1/Op1"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "util_vector_logic_0/Op2"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "util_vector_logic_1/Op2"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "vio_0/probe_in0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "vio_0/clk"
+        ]
+      }
+    }
+  }
+}

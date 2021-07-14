@@ -1,0 +1,85 @@
+$date
+	Fri Mar 20 17:27:22 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module test_b2b $end
+$var wire 4 ! BCD1 [3:0] $end
+$var wire 4 " BCD0 [3:0] $end
+$var reg 6 # valoare_bin [5:0] $end
+$scope module b $end
+$var wire 6 $ valoare_bin [5:0] $end
+$var wire 4 % BCD1 [3:0] $end
+$var wire 4 & BCD0 [3:0] $end
+$var reg 8 ' bcd [7:0] $end
+$var integer 32 ( i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+b0 $
+b0 #
+bx "
+bx !
+$end
+#5
+b110 "
+b110 &
+b11 !
+b11 %
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#10
+b0 #
+b0 $
+#15
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#20
+b0 #
+b0 $
+#25
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#30
+b0 #
+b0 $
+#35
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#40
+b0 #
+b0 $
+#45
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#50
+b0 #
+b0 $
+#55
+b110 (
+b1100011 '
+b111111 #
+b111111 $
+#60
+b0 #
+b0 $

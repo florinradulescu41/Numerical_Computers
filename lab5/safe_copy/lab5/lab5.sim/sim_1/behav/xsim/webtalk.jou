@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May  2 01:57:12 2020
+# Process ID: 6424
+# Current directory: F:/fac/cn/lab5/lab5.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/fac/cn/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/simulare_pt_detoate_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/fac/cn/lab5/lab5.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/fac/cn/lab5/lab5.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/fac/cn/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/simulare_pt_detoate_behav/webtalk/xsim_webtalk.tcl -notrace
